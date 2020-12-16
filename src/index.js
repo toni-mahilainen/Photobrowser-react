@@ -5,6 +5,7 @@ import App from './App';
 import { Provider } from 'react-redux';
 import store from './store';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
@@ -22,4 +23,15 @@ ReactDOM.render(
   </Provider>
   , document.getElementById('root')
 >>>>>>> 56afb5c (Kaikki kuvat palvelimelta. Tilan päivitys reduxilla)
+=======
+import { BrowserRouter as Router } from 'react-router-dom';
+
+ReactDOM.render(
+    <Provider store={store}>
+        <Router>
+            <App />
+        </Router>
+    </Provider>
+    , document.getElementById('root')
+>>>>>>> c3f2200 (Sivun vaihto kesken)
 )

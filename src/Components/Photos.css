@@ -1,10 +1,17 @@
 .photos-container {
     width: fit-content;
+<<<<<<< HEAD
     max-height: 100vh;
     margin: auto;
     display: grid;
     grid-template-columns: 170px 170px 170px 170px 170px;
     grid-template-rows: 170px 170px 170px 170px;
+=======
+    margin: auto;
+    display: grid;
+    grid-template-columns: 170px 170px 170px 170px 170px;
+    grid-template-rows: 170px 170px 170px 170px ;
+>>>>>>> c3f2200 (Sivun vaihto kesken)
     align-content: space-around;
 }
 
@@ -14,6 +21,7 @@
     text-align: center;
 }
 
+<<<<<<< HEAD
 .fullsize-img {
     -webkit-box-shadow: 0px 0px 4px 2px white;
     -moz-box-shadow: 0px 0px 4px 2px white;
@@ -44,3 +52,9 @@
 .no-more-photos {
     text-align: center;
 }
+=======
+.thumbnail {
+    justify-self: center;
+    align-self: center;
+}
+>>>>>>> c3f2200 (Sivun vaihto kesken)
