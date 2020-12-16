@@ -10,9 +10,9 @@ const reducer = (state = [], action) => {
     }
 }
 
-export const getPhotos = () => {
+export const getPhotos = (limiter) => {
     return async dispatch => {
-        const photos = await photoService.getAll()
+        const photos = await photoService.get(limiter.start, limiter.limit)
         dispatch({
             type: 'GET_PHOTOS',
             data: photos

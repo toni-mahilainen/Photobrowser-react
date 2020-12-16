@@ -1,0 +1,19 @@
+.photos-container {
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 170px 170px 170px 170px 170px;
+    grid-template-rows: 170px 170px 170px 170px ;
+    align-content: space-around;
+}
+
+.photo-details {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.thumbnail {
+    justify-self: center;
+    align-self: center;
+}

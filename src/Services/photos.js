@@ -1,9 +1,9 @@
 import axios from 'axios'
-const baseUrl = 'https://jsonplaceholder.typicode.com/photos?_start=0&_limit=20'
+const baseUrl = 'https://jsonplaceholder.typicode.com/photos?'
 
-const getAll = async () => {
-    const response = await axios.get(baseUrl)
+const get = async (start, limit) => {
+    const response = await axios.get(`${baseUrl}_start=${start}&_limit=${limit}`)
     return response.data
 }
 
-export default { getAll }
+export default { get }
