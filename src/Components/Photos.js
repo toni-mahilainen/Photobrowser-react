@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import './Photos.css'
 
@@ -16,6 +17,14 @@ const Photos = ({ photos }) => {
                         )}
                     </div> : <div className='no-more-photos'><h2>No more photos :)</h2></div>
             }
+=======
+
+const Photos = ({ photos }) => {
+    return (
+        <div>
+            <h1>Hello</h1>
+            {photos ? photos.map(photo => <p>{photo.title}</p>) : null}
+>>>>>>> 56afb5c (Kaikki kuvat palvelimelta. Tilan päivitys reduxilla)
         </div>
     );
 }

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+<<<<<<< HEAD
 import { Route, Switch } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Header from './Components/Header';
@@ -37,6 +38,23 @@ const App = () => {
                     <Photos photos={photos} />
                 </Route>
             </Switch>
+=======
+import { useDispatch, useSelector } from 'react-redux';
+import { getPhotos } from './Reducers/photoReducer';
+import './App.css'
+import Photos from './Components/Photos'
+
+const App = () => {
+    const dispatch = useDispatch()
+    const photos = useSelector(state => state)
+    useEffect(() => {
+        dispatch(getPhotos())
+    }, [dispatch]);
+
+    return (
+        <div>
+            <Photos photos={photos} />
+>>>>>>> 56afb5c (Kaikki kuvat palvelimelta. Tilan päivitys reduxilla)
         </div>
     )
 }
