@@ -3,3 +3,16 @@
     display: inline-flex;
     justify-content: center;
 }
+
+button {
+    margin: 10px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    color: gray;
+}

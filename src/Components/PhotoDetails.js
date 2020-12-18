@@ -11,7 +11,7 @@ const PhotoDetails = ({ photos }) => {
                 photo ?
                     <Fragment>
                         <h2>{photo.title}</h2>
-                        <img key={photo.id} src={photo.url} alt="Fullsize" />
+                        <img className='fullsize-img' key={photo.id} src={photo.url} alt="Fullsize" />
                     </Fragment>
                     : <h2>Loading...</h2>
 

@@ -6,12 +6,16 @@ const Photos = ({ photos }) => {
     console.log('photos', photos);
     return (
         <div>
-            <div className='photos-container'>
-                {photos.map(photo =>
-                    <Link className='thumbnail' key={photo.id} to={`/photo/${photo.id}`}>
-                        <img src={photo.thumbnailUrl} alt='Thumbnail' />
-                    </Link>)}
-            </div>
+            {
+                photos.length !== 0 ?
+                    <div className='photos-container'>
+                        {photos.map(photo =>
+                            <Link className='thumbnail-link' key={photo.id} to={`/photo/${photo.id}`}>
+                                <img className='thumbnail-img' src={photo.thumbnailUrl} alt='Thumbnail' />
+                            </Link>
+                        )}
+                    </div> : <div className='no-more-photos'><h2>No more photos :)</h2></div>
+            }
         </div>
     );
 }

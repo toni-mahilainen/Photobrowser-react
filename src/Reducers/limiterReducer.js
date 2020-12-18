@@ -1,4 +1,3 @@
-import photoService from '../Services/photos'
 import { getPhotos } from './photoReducer'
 
 const initialState = {

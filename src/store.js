@@ -1,12 +1,12 @@
 import { applyMiddleware, createStore, combineReducers } from "redux";
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from "redux-thunk";
+import limiterReducer from './Reducers/limiterReducer'
 import photoReducer from './Reducers/photoReducer'
-import pageReducer from './Reducers/pageReducer'
 
 const reducer = combineReducers({
     photos: photoReducer,
-    page: pageReducer
+    limiter: limiterReducer
 })
 
 const store = createStore(
