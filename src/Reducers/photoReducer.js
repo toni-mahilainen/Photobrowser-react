@@ -16,6 +16,7 @@ export const getPhotos = (limiter) => {
     return async dispatch => {
         const photos = await photoService.get(limiter.start, limiter.limit)
         console.log('photosReducer', photos);
+<<<<<<< HEAD
 =======
 export const getPhotos = () => {
     return async dispatch => {
@@ -26,6 +27,8 @@ export const getPhotos = (limiter) => {
     return async dispatch => {
         const photos = await photoService.get(limiter.start, limiter.limit)
 >>>>>>> c3f2200 (Sivun vaihto kesken)
+=======
+>>>>>>> 305840b (Valmis julkaisuun)
         dispatch({
             type: 'GET_PHOTOS',
             data: photos

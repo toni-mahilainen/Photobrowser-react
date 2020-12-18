@@ -18,6 +18,7 @@ const Photos = ({ photos }) => {
                         )}
                     </div> : <div className='no-more-photos'><h2>No more photos :)</h2></div>
             }
+<<<<<<< HEAD
 =======
 =======
 import { Link } from 'react-router-dom';
@@ -40,6 +41,8 @@ const Photos = ({ photos }) => {
                     </Link>)}
             </div>
 >>>>>>> c3f2200 (Sivun vaihto kesken)
+=======
+>>>>>>> 305840b (Valmis julkaisuun)
         </div>
     );
 }

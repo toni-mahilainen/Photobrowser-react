@@ -12,10 +12,14 @@ const PhotoDetails = ({ photos }) => {
                     <Fragment>
                         <h2>{photo.title}</h2>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <img className='fullsize-img' key={photo.id} src={photo.url} alt="Fullsize" />
 =======
                         <img key={photo.id} src={photo.url} alt="Fullsize" />
 >>>>>>> c3f2200 (Sivun vaihto kesken)
+=======
+                        <img className='fullsize-img' key={photo.id} src={photo.url} alt="Fullsize" />
+>>>>>>> 305840b (Valmis julkaisuun)
                     </Fragment>
                     : <h2>Loading...</h2>
 

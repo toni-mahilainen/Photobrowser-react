@@ -4,6 +4,7 @@ import { applyMiddleware, createStore, combineReducers } from "redux";
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from "redux-thunk";
 import limiterReducer from './Reducers/limiterReducer'
+<<<<<<< HEAD
 import photoReducer from './Reducers/photoReducer'
 
 const reducer = combineReducers({
@@ -20,12 +21,13 @@ import { applyMiddleware, createStore, combineReducers } from "redux";
 >>>>>>> c3f2200 (Sivun vaihto kesken)
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from "redux-thunk";
+=======
+>>>>>>> 305840b (Valmis julkaisuun)
 import photoReducer from './Reducers/photoReducer'
-import pageReducer from './Reducers/pageReducer'
 
 const reducer = combineReducers({
     photos: photoReducer,
-    page: pageReducer
+    limiter: limiterReducer
 })
 
 const store = createStore(

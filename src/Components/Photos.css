@@ -1,6 +1,7 @@
 .photos-container {
     width: fit-content;
 <<<<<<< HEAD
+<<<<<<< HEAD
     max-height: 100vh;
     margin: auto;
     display: grid;
@@ -12,6 +13,13 @@
     grid-template-columns: 170px 170px 170px 170px 170px;
     grid-template-rows: 170px 170px 170px 170px ;
 >>>>>>> c3f2200 (Sivun vaihto kesken)
+=======
+    max-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 170px 170px 170px 170px 170px;
+    grid-template-rows: 170px 170px 170px 170px;
+>>>>>>> 305840b (Valmis julkaisuun)
     align-content: space-around;
 }
 
@@ -22,6 +30,9 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 305840b (Valmis julkaisuun)
 .fullsize-img {
     -webkit-box-shadow: 0px 0px 4px 2px white;
     -moz-box-shadow: 0px 0px 4px 2px white;
@@ -31,6 +42,7 @@
 }
 
 .thumbnail-link {
+<<<<<<< HEAD
     justify-self: center;
     align-self: center;
 }
@@ -58,3 +70,26 @@
     align-self: center;
 }
 >>>>>>> c3f2200 (Sivun vaihto kesken)
+=======
+    justify-self: center;
+    align-self: center;
+}
+
+.thumbnail-img {
+    width: 150px;
+    -webkit-box-shadow: 0px 0px 4px 2px white;
+    -moz-box-shadow: 0px 0px 4px 2px white;
+    box-shadow: 0px 0px 4px 2px white;
+    border: 1px black solid;
+    border-radius: 10px;
+    transition: ease-in-out width 0.5s;
+}
+
+.thumbnail-img:hover {
+    width: 165px;
+}
+
+.no-more-photos {
+    text-align: center;
+}
+>>>>>>> 305840b (Valmis julkaisuun)
